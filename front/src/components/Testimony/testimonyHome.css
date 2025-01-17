@@ -1,0 +1,58 @@
+
+/* Testimony */
+
+.testimony{
+    background-color: #e5e5f7;
+    margin-top: 2rem;
+}
+
+.testimony__container{
+    display:grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1rem;
+    align-items: center;
+}
+
+.testimony__body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    grid-column: 2/3; /* Un grid column que empieze en la segunda linea de columnas y termine en la 3ra */
+    grid-row: 1/2 ; /* Que comience en la primera y que termine en la 2da */
+    opacity: 0;
+    pointer-events: none;
+}
+
+.testimony__body--show{
+    pointer-events: unset; 
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+
+.testimony__img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.testimony__texts{
+    max-width: 700px;
+}
+
+.testimony__course{
+    background-color: royalblue;
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+}
+
+
+.testimony__arrow{
+    width: 90%;
+    cursor: pointer;
+}
